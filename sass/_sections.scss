@@ -1,0 +1,139 @@
+section.gray {
+  
+  background-color: $brand-gray;
+  
+}
+
+section.sand {
+  
+  background-color: #F2E2D2;
+}
+
+.under-jumbotron {
+  
+  margin-top: -2em;
+  padding-top: 2em;
+  
+}
+
+//  three column wide bootstrap marketing circles
+//
+.page-feature-container {
+  
+}
+
+//
+//
+.page-service-marketing-container {
+  
+  margin-top: 2em;
+  
+}
+
+.page-service-marketing-columns {
+  
+  h3 {
+    
+    color: $brand-warning;
+    font-size: $font-size-h4;
+    
+    a {
+      
+      color: $brand-warning;
+      
+      &:hover {
+        
+        color: desaturate($brand-warning, 20%);
+        
+      }
+      
+    }
+    
+  }
+  
+}
+
+// featurettes
+
+.page-featurette-section {
+  
+  margin: 1em 0;
+  padding: 3em 0;
+  
+  h2 {
+    
+    color: $brand-primary;
+    text-align: center;
+    
+  }
+  
+  hr {
+    
+    border-top: none;
+    border-bottom: 5px solid;
+    color: $brand-primary;
+    
+  }
+  
+  h3 {
+    
+    font-size: 40px;
+    
+  }
+  
+  img {
+    
+    margin-bottom: 10px;
+    
+  }
+  
+  .page-featurette-section-inner {
+    
+    margin-bottom: 1em;
+    
+    p {
+      
+      font-size: 32px;
+      
+    }
+    
+  }
+  
+}
+
+.page-marketing-four-columns-container {
+  
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+  
+}
+
+.page-category-post-list {
+  
+  margin-top: 2em;
+  margin-bottom: 2em;
+  
+  .btn-wire {
+    
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+  }
+  
+  h3 {
+    
+    text-align: center;
+    font-size: 30px;
+    
+  }
+  
+  img {
+    
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 10px;
+    
+  }
+  
+}
