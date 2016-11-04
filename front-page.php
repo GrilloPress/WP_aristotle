@@ -17,17 +17,24 @@ get_header(); ?>
 
 <section class="jumbotron">
    <div class="container">
-      <img class="" src="<?php echo get_template_directory_uri() . "/images/bessemer_team_aristotle.png"; ?>" alt="The Bessemer team">
-     <h1><?php echo CFS()->get( 'jumbotron_title' );?></h1>
-    
-     <p>
-       <?php echo CFS()->get( 'jumbotron_subtitle' );?>
-     </p>
+     <div class="col-md-8">
+       <img class="" src="<?php echo get_template_directory_uri() . "/images/bessemer_team_aristotle.png"; ?>" alt="The Bessemer team">
+       <h1><?php echo CFS()->get( 'jumbotron_title' );?></h1>
+
+       <p>
+         <?php echo CFS()->get( 'jumbotron_subtitle' );?>
+       </p>
+
+     </div>
      
-     <p>
-       <?php $jbo_link = CFS()->get( 'jumbotron_btn' );?>
-       <a class="btn btn-warning btn-lg" href="<?php echo $jbo_link["url"];?>" title="<?php echo $jbo_link["text"];?>" target="<?php echo $jbo_link["target"];?>" role="button"><?php echo $jbo_link["text"];?></a>
-     </p>
+     <div class="col-md-4">
+       <p>
+         <?php $jbo_link = CFS()->get( 'jumbotron_btn' );?>
+         <a class="btn btn-block btn-warning btn-lg" href="<?php echo $jbo_link["url"];?>" title="<?php echo $jbo_link["text"];?>" target="<?php echo $jbo_link["target"];?>" role="button"><?php echo $jbo_link["text"];?></a>
+       </p>
+     </div>
+     
+    
   </div>
 </section>
 

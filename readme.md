@@ -1,27 +1,25 @@
-# Base WordPress Theme for Sheffield Teaching Hospitals NHS Foundation Trust
+# Aristotle
 
-This is the default service theme for STHFT. It should be used as the starting point for all WordPress themes.
+Education and development tracker theme built for WordPress
 
-It comes with:
+## Concept
 
-- Bootstrap grid and styles
-- Sass for CSS
-- Breadcrumbs functionality
-- Jetpack integration (Full support coming in terms of forms)
-- Bootstrap nav walker
+A simple WordPress theme/app which lets a small group of users to create posts. Each post is an activity. Each post contains:
 
-Development of the following is also coming soon:
+- Time and date
+- Title
+- Category
+- Content (Notes, explanation)
 
-- Colorizer for images so thumbnails are coloured according to set theme
-- SEO integration via YOAST
-- Google Analytics integration
+This aims to show the teaching/learning activity around a single child.
 
-## branding
+## Dashboard
 
-- NHS Blue: #006db8
-- Jelly bean blue: #277691
-- Pink: #b61e53
-- Purple: #6d1d61
-- Green: #007e5a
-- Light Green: #6eae5e
-- Pale green: #18bc9c
+The app has a simple summary dashboard which features:
+
+- type of recent teaching activity, represented in a pie chart
+- consecutive days
+- stream/feed of recent activity
+- link to day and monthly archives of activity
+
+Within that, each day/month/year archive page should also illustrate the summary. So a day will summarize the activity within that.

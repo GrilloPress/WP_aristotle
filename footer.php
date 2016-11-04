@@ -16,7 +16,7 @@
       <div class="container">
         <div class="col-md-12">
           <div class="text-center">
-            <a href="<?php echo home_url('contact'); ?>">Tell us about your next project</a>
+            <a href="<?php echo home_url(''); ?>">Add an activity for today</a>
           </div>
         </div>
       </div>
