@@ -185,17 +185,6 @@ function sth_custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'sth_custom_excerpt_length', 999 );
 
-
-
-
-
-
-
-
-
-
-
-
 // Sidebars & Widgetizes Areas
 function sth_register_footer() {
     
@@ -276,23 +265,17 @@ if( !function_exists( "sth_theme_js" ) ) {
     wp_enqueue_script( 'bootstrap' );
     wp_enqueue_script( 'app-js' );
     wp_enqueue_script( 'modernizr' );
+    wp_enqueue_script( 'cookie', get_template_directory_uri() . '/js/cookie.js' );
+
+    $sthft_site = array(
+      'url' => site_url('/cookie-policy')
+    );
+
+    wp_localize_script( 'cookie', 'sthft_site', $sthft_site );
     
   }
 }
 add_action( 'wp_enqueue_scripts', 'sth_theme_js' );
-
-
-
-// Add EU cookie to site. JS code set out in cookie.js.  
-
-wp_enqueue_script( 'cookie', get_template_directory_uri() . '/js/cookie.js' );
-
-$sthft_site = array(
-	'url' => site_url('/cookie-policy')
-);
-
-wp_localize_script( 'cookie', 'sthft_site', $sthft_site );
-wp_enqueue_script( 'cookie' );
 
 /**
  * Remove Jetpack Form CSS

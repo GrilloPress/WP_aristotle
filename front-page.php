@@ -42,12 +42,18 @@ get_header(); ?>
   <div class="container">
     <div class="row">
       <main id="main" class="col-md-12" role="main">
-
+ <?php get_calendar(); ?> 
         <?php while ( have_posts() ) : the_post(); ?>
 
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <header class="entry-header">
-              
+              		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+
+                <?php if ( 'post' == get_post_type() ) : ?>
+                <div class="entry-meta">
+                  <?php sth_posted_on(); ?>
+                </div><!-- .entry-meta -->
+                <?php endif; ?>
             </header><!-- .entry-header -->
 
             <div class="entry-content">
